@@ -26,11 +26,7 @@ for i in des:
 only_description = description[1::2]
 print(only_description)
 
-description = []
-# for i in des:
-#     des1 = i.text.strip()
-#     description.append(des1)
-# print(description)
+
 
 #Duration of the movie.-page-1
 def film_duration():
@@ -104,12 +100,24 @@ for dn in d_name2:
     director_name2.append(dir_name)
 #print(director_name2)
 
+#Description
+des2 = soup2.find_all('p',class_ = "text-muted")
+
+description2 = []
+for i in des2:
+    m_des = i.text.strip()
+    description2.append(m_des) 
+only_description2 = description2[1::2]
+print(only_description2)
+
 # Intersection of two lists.
 
 director = director_name+director_name2
 imdbrating = imdb_rating+imdb_rating2
 metarating = meta_rating+meta_rating2
-film_duration = f_d+duration2
+duration_100 = f_d+duration2
+description_100 = only_description+only_description2
+
 
 # print(director[51])
 # print(len(director))
