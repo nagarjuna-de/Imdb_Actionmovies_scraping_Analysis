@@ -68,18 +68,26 @@ def release_date(action):
         r_date.append(r_dt)
     return r_date
 
+<<<<<<< Updated upstream
 first_50_titles = title(page1)
 #print(first_50_titles)
 second_50_titles = title(page2)
 #print(second_50_titles)
 all_titles = first_50_titles + second_50_titles
 print(all_titles)
+=======
+# first_50_titles = title(page1)
+# print(first_50_titles)
+# second_50_titles = title(page2)
+# print(second_50_titles)
+>>>>>>> Stashed changes
 
 # first_50_description = description(page1)
 # print(first_50_description)
 # second_50_description = description(page2)
 # print(second_50_description)
 
+<<<<<<< Updated upstream
 # first_50_reldate = release_date(page1)
 # #print(first_50_reldate)
 # second_50_reldate = release_date(page2)
@@ -87,5 +95,12 @@ print(all_titles)
 
 # all_release_date = first_50_reldate + second_50_reldate
 # print(all_release_date)
+=======
+first_50_reldate = release_date(page1)
+print(first_50_reldate)
+second_50_reldate = release_date(page2)
+print(second_50_reldate)
+
+>>>>>>> Stashed changes
 
 
